@@ -1,11 +1,13 @@
 {
   "name": "soul-components",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
+  "main": "lib/soul-components.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "lib": "node packages/Icon/src/svg/parse.js && vue-cli-service build --target lib --name soul-components --dest lib packages/index.js"
   },
   "dependencies": {
     "vue": "^2.5.17"
