@@ -1,11 +1,13 @@
 // 导入颜色选择器组件
-import menu from './menu'
-import icon from './icon'
+// import menu from './menu'
+// import icon from './icon'
+import picker from './picker'
 
 // 存储组件列表
 const components = [
-  menu,
-  icon
+  // menu,
+  // icon,
+  picker
 ]
 
 const install = function (Vue) {
@@ -20,6 +22,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  menu,
-  icon
+  // menu,
+  // icon,
+  picker
 }
